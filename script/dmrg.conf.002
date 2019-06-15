@@ -1,0 +1,23 @@
+nelec 4
+spin 0
+hf_occ integral
+
+schedule
+0 100 1e-04 1e-04
+5 250 1e-05 1e-05
+10 400 1e-06 1e-06
+15 400 1e-07 0.0
+end
+
+maxiter 25
+twodot_to_onedot 20
+sweep_tol 1e-06
+nopermsymm
+orbitals ./FCIDUMP
+warmup local_4site
+nroots 1
+outputlevel 8
+num_thrds 28
+mem 80 g
+restart_onepdm
+prebuild
